@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "embiem.karakeep",
+  "name": "Karakeep Quick Add",
+  "version": "0.1.0",
+  "author": "embiem",
+  "description": "Save a link or a note to Karakeep from the Omarchy bar.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Karakeep",
+    "description": "Paste a link or type a note and press Enter to save it to Karakeep.",
+    "category": "Productivity",
+    "aliases": ["karakeep", "bookmark", "hoarder"],
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}

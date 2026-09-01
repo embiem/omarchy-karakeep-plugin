@@ -4,6 +4,8 @@ An [Omarchy](https://omarchy.org) bar-widget plugin that quickly saves a link
 or a note to [Karakeep](https://karakeep.app): click the icon or configure a keyboard
 shortcut, paste a URL or type a note, and press Enter.
 
+![Plugin preview](preview.png)
+
 ## Install
 
 ```

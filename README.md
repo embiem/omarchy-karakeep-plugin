@@ -29,7 +29,7 @@ enable it from the Omarchy settings menu.
    o.bind("SUPER + ALT + B", "Karakeep quick add", hl.dsp.global("embiem.karakeep:toggle"))
    ```
 
-   Change `SUPER + ALT + K` to any unused combination. Saving the file applies
+   Change `SUPER + ALT + B` to any unused combination. Saving the file applies
    the binding immediately.
 
 The key is stored in your system keyring via `secret-tool` (part of

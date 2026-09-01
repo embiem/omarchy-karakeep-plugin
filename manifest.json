@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "embiem.karakeep",
   "name": "Karakeep Quick Add",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "embiem",
   "description": "Save a link or a note to Karakeep from the Omarchy bar.",
   "kinds": ["bar-widget"],

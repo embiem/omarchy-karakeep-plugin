@@ -1,8 +1,8 @@
 # Karakeep Quick Add
 
-An [Omarchy](https://omarchy.org) bar-widget plugin that saves a link or a
-note to [Karakeep](https://karakeep.app) without leaving the keyboard: hit
-the bar icon, paste a URL or type a note, press Enter.
+An [Omarchy](https://omarchy.org) bar-widget plugin that quickly saves a link
+or a note to [Karakeep](https://karakeep.app): click the icon or configure a keyboard
+shortcut, paste a URL or type a note, and press Enter.
 
 ## Install
 
@@ -21,6 +21,14 @@ enable it from the Omarchy settings menu.
    you run one).
 3. Create an API key in Karakeep under **Settings > API Keys** with the
    `users:read` and `bookmarks:readwrite` scopes, and paste it in.
+4. Add a shortcut of your choice to `~/.config/hypr/bindings.lua`:
+
+   ```lua
+   o.bind("SUPER + ALT + B", "Karakeep quick add", hl.dsp.global("embiem.karakeep:toggle"))
+   ```
+
+   Change `SUPER + ALT + K` to any unused combination. Saving the file applies
+   the binding immediately.
 
 The key is stored in your system keyring via `secret-tool` (part of
 `libsecret`), never on disk in plaintext and never in Omarchy's own settings
@@ -29,7 +37,8 @@ API key over plaintext HTTP to anything but `localhost`/loopback.
 
 ## Use
 
-- **Left click** the bar icon (or its keybind) to open the panel.
+- Press your configured shortcut or **left click** the bar icon to open the
+  panel.
 - Paste a URL to save it as a link, or type free text to save it as a note.
   Press Enter to submit.
 - **Right click** the bar icon to jump straight to your Karakeep dashboard.

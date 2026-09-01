@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Io
+import Quickshell.Hyprland
 import qs.Ui
 
 // Bookmark button for the Karakeep quick-add panel. The bar-widget root keeps
@@ -57,6 +58,13 @@ BarWidget {
     function show(): void { root.open() }
     function hide(): void { root.close() }
     function toggle(): void { root.togglePanel() }
+  }
+
+  GlobalShortcut {
+    appid: "embiem.karakeep"
+    name: "toggle"
+    description: "Open Karakeep Quick Add"
+    onPressedChanged: if (pressed) root.togglePanel()
   }
 
   BarIconButton {
